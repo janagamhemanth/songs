@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= appName %> | Songs</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a class="logo" href="/"><%= appName %> 🎵</a>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/songs">Songs</a>
+        </div>
+    </nav>
+
+    <main class="songs-page">
+        <div class="page-heading">
+            <p class="eyebrow">YOUR COLLECTION</p>
+            <h1>Explore Songs</h1>
+            <p>Find music for every mood.</p>
+        </div>
+
+        <div class="song-grid">
+
+            <% songs.forEach(function(song) { %>
+
+                <article class="song-card">
+                    <div class="music-icon">♫</div>
+
+                    <p class="genre"><%= song.genre %></p>
+
+                    <h2><%= song.title %></h2>
+
+                    <p class="artist">
+                        Artist: <%= song.artist %>
+                    </p>
+                </article>
+
+            <% }); %>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 <%= appName %> Music Library</p>
+    </footer>
+
+</body>
+</html>

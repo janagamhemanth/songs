@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= appName %> | Home</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a class="logo" href="/"><%= appName %> 🎵</a>
+
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/songs">Songs</a>
+        </div>
+    </nav>
+
+    <main class="hero">
+        <p class="eyebrow">YOUR PERSONAL MUSIC LIBRARY</p>
+
+        <h1>Welcome to <%= appName %></h1>
+
+        <p class="tagline"><%= tagline %></p>
+
+        <p class="description">
+            Discover your next favourite song.
+            Explore music from different artists and genres.
+        </p>
+
+        <a class="button" href="/songs">Explore Songs →</a>
+    </main>
+
+    <footer>
+        <p>© 2026 <%= appName %> Music Library</p>
+    </footer>
+
+</body>
+</html>
